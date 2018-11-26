@@ -46,7 +46,7 @@
         "type": "wordpress-muplugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.8.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1542953676&Signature=775BlnZ5AiXexo5kfhbRPydmGFI%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.8.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329467&Signature=T4Bmu9yTz%2FqRATbztw5%2B2I3ro6c%3D"
         }
       }
     },
@@ -58,7 +58,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/stripe/gravityformsstripe_2.5.4.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1542953678&Signature=0iZNuk2RGT9aku9bx5fUB%2FLyLXQ%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/addons/stripe/gravityformsstripe_2.5.4.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329469&Signature=nSiSGtge%2FhmsoskvNyMzwfs1J%2FU%3D"
         }
       }
     }
