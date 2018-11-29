@@ -1,0 +1,102 @@
+/** Gravity Forms */
+.background.homepage {
+  .gform_wrapper form {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .gform_wrapper ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .gform_wrapper li {
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+  .gform_wrapper .gfield_required {
+    padding-left: 1px;
+    color: $danger;
+  }
+
+  .gform_wrapper input[type="email"],
+  .gform_wrapper input[type="date"],
+  .gform_wrapper input[type="datetime"],
+  .gform_wrapper input[type="datetime-local"],
+  .gform_wrapper input[type="month"],
+  .gform_wrapper input[type="number"],
+  .gform_wrapper input[type="password"],
+  .gform_wrapper input[type="search"],
+  .gform_wrapper input[type="tel"],
+  .gform_wrapper input[type="text"],
+  .gform_wrapper input[type="time"],
+  .gform_wrapper input[type="week"],
+  .gform_wrapper input[type="url"],
+  .gform_wrapper input[type="submit"],
+  .gform_wrapper select,
+  .gform_wrapper textarea {
+    display: inline;
+    flex: 0 1 auto;
+    margin: .25rem;
+    padding: .25rem .75rem;
+    border: 0px;
+    border-radius: $border-radius;
+    max-width: 200px;
+  }
+  .gform_wrapper input[type="submit"] {
+    background-color: $primary-color;
+    cursor: pointer;
+    color: $white;
+    font-weight: 700;
+    width: 200px;
+    
+    &:hover {
+      background-color: lighten($primary-color, 5%);
+    }
+
+    @media (max-width: 767px) {
+      // display: block;
+      margin: 5px auto;
+    }
+  }
+
+  .ginput_container {
+    display: inline;
+  }
+
+  .gform_fields {
+    display: inline;
+    li {
+      display: inline;
+      input {
+        // margin: .25rem;
+        // padding: .25rem .75rem;
+        // border: 0px;
+        // border-radius: $border-radius;
+      }
+    }
+
+    label {
+      display: none;
+    }
+  }
+
+  .gform_body, .gform_footer {
+    display: inline;
+  }
+}
+
+.gform_button {
+  background-color: $primary-color;
+  cursor: pointer;
+  color: $white;
+  font-weight: 700;
+  padding: .25rem .75rem;
+  border: 0px;
+  border-radius: $border-radius;
+  
+  &:hover {
+    background-color: lighten($primary-color, 5%);
+  }
+}

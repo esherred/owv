@@ -11,7 +11,7 @@
     }
   ?>
 
-  <div class="background homepage pb-5" style="background-image: url(<?php echo $thumbnail; ?>)">
+  <div class="background pb-5" style="background-image: url(<?php echo $thumbnail; ?>)">
     
     <?php get_template_part( 'templates/_partials/nav' ); ?>
     
@@ -19,7 +19,9 @@
       
 
       <div class="row">
-        <div class="col">
+        <div class="col text-left">
+
+          <h1><?php the_title(); ?></h1>
           
           <?php the_content(); ?>
 
