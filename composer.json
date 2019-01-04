@@ -1,98 +1,123 @@
 {
-  "name": "ericsherred/owv",
-  "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://ericsherred.com/",
-  "authors": [
-    {
-      "name": "Eric Sherred",
-      "email": "eric@ericsherred.com",
-      "homepage": "https://ericsherred.com/"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "config": {
-    "preferred-install": "dist"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.7.7",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
-        },
-        "require": {
-          "philippbaschke/acf-pro-installer": "^1.0",
-          "composer/installers": "^1.0"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "gravityforms/gravityforms",
-        "version": "2.3.6.8",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.8.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329467&Signature=T4Bmu9yTz%2FqRATbztw5%2B2I3ro6c%3D"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "gravityforms/gravityformsstripe",
-        "version": "2.5.4",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://s3.amazonaws.com/gravityforms/addons/stripe/gravityformsstripe_2.5.4.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329469&Signature=nSiSGtge%2FhmsoskvNyMzwfs1J%2FU%3D"
-        }
-      }
-    }
-  ],
-  "require": {
-    "php": ">=5.6",
-    "composer/installers": "^1.4",
-    "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.9.8",
-    "oscarotero/env": "^1.1.0",
-    "roots/wp-password-bcrypt": "1.0.0",
-    "roots/wp-config": "1.0.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
-    "gravityforms/gravityforms": "2.3.6.8",
-    "gravityforms/gravityformsstripe": "2.5.4"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.0.2",
-    "roave/security-advisories": "dev-master"
-  },
-  "extra": {
-    "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
-    ],
-    "test": [
-      "phpcs"
-    ]
-  }
+	"name": "ericsherred/owv",
+	"type": "project",
+	"license": "MIT",
+	"description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+	"homepage": "https://ericsherred.com/",
+	"authors": [
+		{
+			"name": "Eric Sherred",
+			"email": "eric@ericsherred.com",
+			"homepage": "https://ericsherred.com/"
+		}
+	],
+	"keywords": [
+		"bedrock",
+		"roots",
+		"wordpress",
+		"stack",
+		"composer",
+		"vagrant",
+		"wp"
+	],
+	"config": {
+		"preferred-install": "dist"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "advanced-custom-fields/advanced-custom-fields-pro",
+				"version": "5.7.7",
+				"type": "wordpress-muplugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+				},
+				"require": {
+					"philippbaschke/acf-pro-installer": "^1.0",
+					"composer/installers": "^1.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "gravityforms/gravityforms",
+				"version": "2.3.6.8",
+				"type": "wordpress-muplugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.8.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329467&Signature=T4Bmu9yTz%2FqRATbztw5%2B2I3ro6c%3D"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "gravityforms/gravityformsstripe",
+				"version": "2.5.4",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://s3.amazonaws.com/gravityforms/addons/stripe/gravityformsstripe_2.5.4.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329469&Signature=nSiSGtge%2FhmsoskvNyMzwfs1J%2FU%3D"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "gravityforms/gravityformspaypal",
+				"version": "3.1.1",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://s3.amazonaws.com/gravityforms/addons/paypal/gravityformspaypal_3.1.1.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1546731217&Signature=robw3FWQubJG8kvzb4FH646oCFY%3D"
+				}
+			}
+		}
+	],
+	"require": {
+		"php": ">=5.6",
+		"composer/installers": "^1.4",
+		"vlucas/phpdotenv": "^2.0.1",
+		"johnpbloch/wordpress": "4.9.8",
+		"oscarotero/env": "^1.1.0",
+		"roots/wp-password-bcrypt": "1.0.0",
+		"roots/wp-config": "1.0.0",
+		"advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
+		"gravityforms/gravityforms": "2.3.6.8",
+		"gravityforms/gravityformsstripe": "2.5.4",
+		"gravityforms/gravityformspaypal": "3.1.1"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.0.2",
+		"roave/security-advisories": "dev-master"
+	},
+	"extra": {
+		"installer-paths": {
+			"web/app/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"web/app/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"web/app/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		},
+		"wordpress-install-dir": "web/wp"
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"php -r \"copy('.env.example', '.env');\""
+		],
+		"test": [
+			"phpcs"
+		]
+	}
 }
