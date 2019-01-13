@@ -21,15 +21,58 @@ body {
     min-height: 100%;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		
+		&.homepage {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
 
     nav {
-      background-color: rgba($black, .6);
+			background-color: rgba($black, .6);
+			position: absolute;
+			top: 0;
+			width: 100%;
     }
     
     main {
       background-color: rgba($black, .6);
-      color: $white;
+			color: $white;
+			margin-top: 71px;
+
+			.gfield_radio {
+				text-align: center;
+				li {
+					input {
+						display: none !important;
+						&:checked {
+							&+label {
+								background-color: $primary-color;
+								font-weight: normal !important;
+							}
+						}
+					}
+
+					label {
+						min-width: 50px;
+						background-color: $secondary-color;
+						padding: .5rem .75rem;
+						max-width: 100%;
+						border-radius: $border-radius;
+						margin: 0 1rem;
+
+						&:hover {
+							background-color: lighten($secondary-color, 5%);
+						}
+					}
+				}
+			}
     }
   }
 

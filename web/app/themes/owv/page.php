@@ -1,5 +1,3 @@
-<?php /* Template Name: Homepage */ ?>
-
 <?php get_header(); ?>
 
   <?php 
@@ -19,9 +17,7 @@
       
 
       <div class="row">
-        <div class="col text-left">
-
-          <h1><?php the_title(); ?></h1>
+        <div class="col">
           
           <?php the_content(); ?>
 
