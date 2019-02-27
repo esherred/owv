@@ -52,7 +52,7 @@
 				"type": "wordpress-muplugin",
 				"dist": {
 					"type": "zip",
-					"url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.8.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1543329467&Signature=T4Bmu9yTz%2FqRATbztw5%2B2I3ro6c%3D"
+					"url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.4.6.2.zip?AWSAccessKeyId=AKIAJC3LQNDWHBOFBQIA&Expires=1551325202&Signature=Exp2hyOJ4HgMxdabwOq4GBO4OXw%3D"
 				}
 			}
 		},

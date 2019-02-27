@@ -27,6 +27,12 @@
       </div>
     </main>
 
+		<div class="row mt-5">
+			<div class="col">
+				<h1 class="text-light">OUR WESTERN VALUES</h1>
+			</div>
+		</div>
+
   </div>
 
 <?php get_footer(); ?>

@@ -12,10 +12,17 @@
         <?php if ( get_field( 'disclaimer', 'options' ) ) : ?>
           <div class="row disclaimer">
             <div class="col">
-              <?php the_field( 'disclaimer', 'options' ); ?>
+              <div class="box">
+								<?php the_field( 'disclaimer', 'options' ); ?>
+							</div>
             </div>
           </div>
         <?php endif; ?>
+				<div class="row c4">
+					<div class="col">
+						Our Western Values is a 501(c)(4) organization and donations are not tax deductible.
+					</div>
+				</div>
       </div>
     </footer>
 
